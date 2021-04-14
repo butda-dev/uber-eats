@@ -95,3 +95,41 @@ $screen-sm : 320px;
     background: #757575;
   }
 }
+
+.dish {
+  display: flex;
+  justify-content: space-between;
+
+  &__description {
+    flex-grow: 1;
+    text-align: left;
+    border-bottom: .1em solid #D8D8D8;
+  }
+
+  &__title {
+    font: normal 400 14px $font-family;
+    color: #1D1D1D;
+  }
+
+  &__text {
+    margin-top: 4px;
+    font: normal 400 13px $font-family;
+    color: #626262;
+  }
+
+  &__price {
+    margin-top: 16px;
+    font: normal 550 15px $font-family;
+    color: #1D1D1D;
+  }
+
+  &__image {
+    align-self: flex-end;
+    height: 102px;
+    border-radius: 2px;
+  }
+}
+
+.range {
+  margin: 43px 4px 0 8px;
+}
