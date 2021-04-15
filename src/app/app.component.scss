@@ -14,7 +14,7 @@ $screen-sm : 320px;
     width: 106px;
     height: 13px;
     margin-left: 8.5px;
-    background-image: url(img/logo.svg);
+    background-image: url(../assets/img/logo.svg);
     background-repeat: no-repeat;
   }
 
@@ -38,7 +38,7 @@ $screen-sm : 320px;
 
 .background {
   height: 255px;
-  background-image: url(img/photo.svg);
+  background-image: url(../assets/img/photo.svg);
   background-repeat: no-repeat;
   background-size: cover;
 
@@ -99,26 +99,31 @@ $screen-sm : 320px;
 .dish {
   display: flex;
   justify-content: space-between;
+  margin-top: 16px;
 
   &__description {
+    box-sizing: border-box;
     flex-grow: 1;
     text-align: left;
     border-bottom: .1em solid #D8D8D8;
   }
 
   &__title {
+    margin-block-end: 0;
     font: normal 400 14px $font-family;
     color: #1D1D1D;
   }
 
   &__text {
-    margin-top: 4px;
+    position: absolute;
+    margin-top: 9px;
     font: normal 400 13px $font-family;
     color: #626262;
   }
 
   &__price {
-    margin-top: 16px;
+    margin-block-start: 41px;
+    margin-block-end: 18px;
     font: normal 550 15px $font-family;
     color: #1D1D1D;
   }
@@ -131,5 +136,58 @@ $screen-sm : 320px;
 }
 
 .range {
-  margin: 43px 4px 0 8px;
+  margin: 27px 4px 40px 8px;
+}
+
+.footer {
+  background: #262626;
+  font: normal 400 13px $font-family;
+
+  &__hat {
+    height: 116px;
+    border-bottom: .1em solid #979797;
+    margin: 0 8px 0 8px;
+  }
+
+  &__logo {
+    margin: 56px auto 40.31px .62px;
+  }
+
+  &__main {
+    margin: 32px auto 0 8px;
+  }
+
+  &__select {
+    width: 173px;
+    padding: 12px 55px 12px 48px;
+    border-style: none;
+    color: #fff;
+    background: url(../assets/img/Restaurant/if_icon-ios7-arrow-back_211686-1.svg) 150px 15px no-repeat, url(../assets/img/Restaurant/world.svg) 24px no-repeat #3B3B3B;
+    appearance: none;
+  }
+}
+
+.uber-eats {
+  height: 59px;
+  width: 100px;
+  margin-top: 32px;
+  font-size: 16px;
+  color: #49A144;
+
+  &__text {
+    display: inline;
+    color: #fff;
+  }
+
+  &__links {
+    margin-top: 16px;
+    height: 24px;
+    background: url(../assets/img/Restaurant/ic/24/social/facebook.svg) -2px no-repeat, url(../assets/img/Restaurant/ic/24/social/twitter.svg) center no-repeat, url(../assets/img/Restaurant/ic/24/social/instagram.svg) right no-repeat;
+  }
+
+  &__nav-text {
+    margin-block-start: 23px;
+    margin-block-end: 0;
+    color: #fff;
+  }
 }
