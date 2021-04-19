@@ -1,6 +1,9 @@
 $font-family: "Roboto", Arial, sans-serif;
 
-$screen-sm : 320px;
+$screen-xs : 473px;
+$screen-sm : 565px;
+$screen-md : 768px;
+$screen-lg : 768px;
 
 .header {
   width: 100%;
@@ -20,6 +23,11 @@ $screen-sm : 320px;
 
   &__nav {
     margin-right: 4px;
+
+    @media screen and (min-width: $screen-xs){
+      display: flex;
+      align-items: center;
+    }
   }
 
   &__nav-btn {
@@ -28,6 +36,20 @@ $screen-sm : 320px;
     border: 1px solid #E0E0E0;
     border-radius: 5%;
     background: #fff;
+
+    @media screen and (min-width: $screen-xs){
+      margin-right: 16px;
+    }
+  }
+
+  &__basket {
+
+    @media screen and (min-width: $screen-xs){
+      height: 72px;
+      width: 40px;
+      background: url(../assets/img/Restaurant/basket.svg) center no-repeat #fff;
+      cursor: pointer;
+    }
   }
 }
 
@@ -38,6 +60,11 @@ $screen-sm : 320px;
   background-repeat: no-repeat;
   background-size: cover;
   z-index: 1;
+
+  @media screen and (min-width: $screen-xs){
+    height: 364px;
+    background-image: url(../assets/img/Restaurant/bc-md.svg); 
+  }
 }
 
 .external-block {
@@ -63,6 +90,11 @@ $screen-sm : 320px;
     margin-block-end: 0;
     font-size: 14px;
     color: #626262;
+
+    @media screen and (min-width: $screen-xs){
+      margin-block-start: 0;
+      margin-right: 110px;
+    }
   }
 
   &__btn {
@@ -73,16 +105,80 @@ $screen-sm : 320px;
     border-style: unset;
     background: #262626;
     color: #fff;
+
+    @media screen and (min-width: $screen-xs){
+      margin-top: 0;
+    }
   }
+
+  &__shell {
+
+    @media screen and (min-width: $screen-xs){
+      height: 32px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 54px;
+    }
+  }
+
+  @media screen and (min-width: $screen-xs){
+    top: 152px;
+    width: 432px;
+    height: 204px;
+    font-size: 36px;
+    box-shadow: none;
+  }
+}
+
+.categories {
+  display: none;
+  
+  &__title {
+    color: #626262;
+    cursor: pointer;
+
+    @media screen and (min-width: $screen-xs){
+      margin: 0 1em 0 .5em;
+      font: normal 400 12px $font-family;
+    }
+
+    @media screen and (min-width: $screen-sm){
+      margin: 0 2em 0 .5em;
+      font: normal 400 14px $font-family;
+    }
+
+    @media screen and (min-width: $screen-md){
+      margin: 0 2.5em 0 .5em;
+      font: normal 400 16px $font-family;
+    }
+  }
+
+  @media screen and (min-width: $screen-xs){
+    display: flex;
+    position: relative;
+    height: 80px;
+    align-items: center;
+    border-bottom: .1em solid #D8D8D8;
+  }
+}
+
+.active-title {
+  color: #327430;
 }
 
 .content {
   text-align: center;
+  margin: 0 4px 0 8px;
   font: normal 400 22px $font-family;
 
   &__title {
     margin: 112px 0 0 0;
     color: #1D1D1D;
+
+    @media screen and (min-width: $screen-xs){
+      margin-top: 56px;
+    }
   }
 
   &__underline {
@@ -90,10 +186,20 @@ $screen-sm : 320px;
     height: 1px;
     margin: 12px auto 0 auto;
     background: #757575;
+
+    @media screen and (min-width: $screen-xs){
+      display: none;
+    }
   }
 
   &__range {
-    margin: 27px 4px 40px 8px;
+    margin-top: 27px;
+    margin-bottom: 40px;
+  }
+
+  @media screen and (min-width: $screen-xs){
+    text-align: left;
+    margin-bottom: 48px;
   }
 }
 
@@ -106,7 +212,13 @@ $screen-sm : 320px;
     box-sizing: border-box;
     flex-grow: 1;
     text-align: left;
-    border-bottom: .1em solid #D8D8D8;
+    border-bottom: 1px solid #D8D8D8;
+
+    @media screen and (min-width: $screen-xs){
+      padding: 16px 0 16px 24px;
+      border-top: 1px solid #D8D8D8;
+      border-left: 1px solid #D8D8D8;
+    }
   }
 
   &__title {
@@ -114,6 +226,10 @@ $screen-sm : 320px;
     margin-block-end: 0;
     font-size: 14px;
     color: #1D1D1D;
+
+    @media screen and (min-width: $screen-xs){
+      font-size: 16px;
+    }
   }
 
   &__text {
@@ -125,16 +241,47 @@ $screen-sm : 320px;
 
   &__price {
     margin-block-start: 41px;
-    margin-block-end: 18px;
     font-size: 15px;
     font-weight: 550;
     color: #1D1D1D;
+
+    @media screen and (min-width: $screen-xs){
+      margin-block-start: 83px;
+    }
   }
 
   &__image {
     align-self: flex-end;
     height: 102px;
     border-radius: 2px;
+
+    img {
+      height: 102px;
+      width: 102px;
+      image-rendering: pixelated;
+
+      @media screen and (min-width: $screen-xs){
+        height: 160px;
+        width: 200px;
+        image-rendering: -webkit-optimize-contrast;
+      }
+    }
+
+    @media screen and (min-width: $screen-xs){
+      height: 160px;
+    }
+  }
+
+  @media screen and (min-width: $screen-xs){
+    height: 160px;
+    margin-top: 32px;
+  }
+}
+
+.checked-dish {
+
+  @media screen and (min-width: $screen-xs){
+    background: #f9f9f9;
   }
 }
 
@@ -157,6 +304,11 @@ $screen-sm : 320px;
     margin-top: 32px;
     padding-bottom: 40px;
     border-bottom: .1em solid #979797;
+
+    @media screen and (min-width: $screen-xs){
+      display: flex;
+      flex-direction: column;
+    }
   }
 
   &__select {
@@ -167,11 +319,19 @@ $screen-sm : 320px;
     appearance: none;
     font: normal 400 13px $font-family;
     color: #fff;
+
+    @media screen and (min-width: $screen-xs){
+      flex-basis: 33%;
+    }
   }
 
   &__nav-text {
     margin-block-start: 23px;
     margin-block-end: 0;
+
+    @media screen and (min-width: $screen-xs){
+      flex-basis: 33%;
+    }
   }
 }
 
@@ -191,6 +351,10 @@ $screen-sm : 320px;
     margin-top: 16px;
     height: 24px;
     background: url(../assets/img/Restaurant/ic/24/social/facebook.svg) -2px no-repeat, url(../assets/img/Restaurant/ic/24/social/twitter.svg) center no-repeat, url(../assets/img/Restaurant/ic/24/social/instagram.svg) right no-repeat;
+  }
+
+  @media screen and (min-width: $screen-xs){
+    flex-basis: 33%;
   }
 }
 
