@@ -3,7 +3,7 @@ $font-family: "Roboto", Arial, sans-serif;
 $screen-xs : 473px;
 $screen-sm : 565px;
 $screen-md : 768px;
-$screen-lg : 768px;
+$screen-lg : 1124px;
 
 .header {
   width: 100%;
@@ -19,14 +19,22 @@ $screen-lg : 768px;
     margin-left: 8.5px;
     background-image: url(../assets/img/logo.svg);
     background-repeat: no-repeat;
+
+    @media screen and (min-width: $screen-md) {
+      margin-left: 7.3vw;
+    }
   }
 
   &__nav {
     margin-right: 4px;
 
-    @media screen and (min-width: $screen-xs){
+    @media screen and (min-width: $screen-xs) {
       display: flex;
       align-items: center;
+    }
+
+    @media screen and (min-width: $screen-md) {
+      margin-right: 7.74vw;
     }
   }
 
@@ -37,14 +45,14 @@ $screen-lg : 768px;
     border-radius: 5%;
     background: #fff;
 
-    @media screen and (min-width: $screen-xs){
+    @media screen and (min-width: $screen-xs) {
       margin-right: 16px;
     }
   }
 
   &__basket {
 
-    @media screen and (min-width: $screen-xs){
+    @media screen and (min-width: $screen-xs) {
       height: 72px;
       width: 40px;
       background: url(../assets/img/Restaurant/basket.svg) center no-repeat #fff;
@@ -64,6 +72,10 @@ $screen-lg : 768px;
   @media screen and (min-width: $screen-xs){
     height: 364px;
     background-image: url(../assets/img/Restaurant/bc-md.svg); 
+  }
+
+  @media screen and (min-width: $screen-md) {
+    background-image: url(../assets/img/Restaurant/bc-lg.svg);
   }
 }
 
@@ -129,6 +141,10 @@ $screen-lg : 768px;
     font-size: 36px;
     box-shadow: none;
   }
+
+  @media screen and (min-width: $screen-md) {
+    left: 7.3vw;
+  }
 }
 
 .categories {
@@ -161,6 +177,10 @@ $screen-lg : 768px;
     align-items: center;
     border-bottom: .1em solid #D8D8D8;
   }
+
+  @media screen and (min-width: $screen-md) {
+    padding-left: 7.3vw;
+  }
 }
 
 .active-title {
@@ -179,6 +199,10 @@ $screen-lg : 768px;
     @media screen and (min-width: $screen-xs){
       margin-top: 56px;
     }
+
+    @media screen and (min-width: $screen-md){
+      margin-left: .703vw;
+    }
   }
 
   &__underline {
@@ -195,11 +219,22 @@ $screen-lg : 768px;
   &__range {
     margin-top: 27px;
     margin-bottom: 40px;
+
+    @media screen and (min-width: $screen-md){
+      display: flex;
+      flex-wrap: wrap;
+      margin-top: 0;
+      margin-bottom: 63px;
+    }
   }
 
   @media screen and (min-width: $screen-xs){
     text-align: left;
     margin-bottom: 48px;
+  }
+
+  @media screen and (min-width: $screen-md) {
+    margin: 0 7.038vw 0 6.598vw;
   }
 }
 
@@ -229,6 +264,7 @@ $screen-lg : 768px;
 
     @media screen and (min-width: $screen-xs){
       font-size: 16px;
+      width: 228px;
     }
   }
 
@@ -275,6 +311,13 @@ $screen-lg : 768px;
   @media screen and (min-width: $screen-xs){
     height: 160px;
     margin-top: 32px;
+  }
+
+  @media screen and (min-width: $screen-md){
+    flex: 1 1 45%;
+    margin-left: .703vw;
+    margin-right: 0.703vw;
+    margin-bottom: 17px;
   }
 }
 
@@ -336,6 +379,10 @@ $screen-lg : 768px;
       margin-block-end: 22px;
     }
   }
+
+  @media screen and (min-width: $screen-md) {
+    padding: 0 87px 0 81px;
+  }
 }
 
 .offset-bottom {
@@ -383,6 +430,7 @@ $screen-lg : 768px;
 
   &__google-pl {
     width: 124px;
+    image-rendering: pixelated;
 
     @media screen and (min-width: $screen-xs) {
       width: 135pxpx;
