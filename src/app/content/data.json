@@ -1,0 +1,39 @@
+
+  [
+    {
+      "firstName": "Сельдь на бородинском хлебе",
+      "secondName": "С яйцом и огурцом",
+      "price": "240",
+      "backgroundUrl": "assets/img/Restaurant/photo-5.png"
+    },
+    {
+      "firstName": "Соленья ассорти",
+      "secondName": "",
+      "price": "320",
+      "backgroundUrl": "assets/img/Restaurant/photo-4.png"
+    },
+    {
+      "firstName": "Грибы маринованные",
+      "secondName": "",
+      "price": "300",
+      "backgroundUrl": "assets/img/Restaurant/photo-3.png"
+    },
+    {
+      "firstName": "Сало домашнее с горчицей",
+      "secondName": "",
+      "price": "320",
+      "backgroundUrl": "assets/img/Restaurant/photo-2.png"
+    },
+    {
+      "firstName": "Малосольная семга",
+      "secondName": "",
+      "price": "390",
+      "backgroundUrl": "assets/img/Restaurant/photo-1.png"
+    },
+    {
+      "firstName": "Язык говяжий с хреном",
+      "secondName": "",
+      "price": "350",
+      "backgroundUrl": "assets/img/Restaurant/photo-12.png"
+    }
+  ]

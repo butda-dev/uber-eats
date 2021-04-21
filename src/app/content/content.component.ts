@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import data from './data.json';
 
 @Component({
   selector: 'app-content',
@@ -12,4 +13,5 @@ export class ContentComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  public snacksList:{firstName:string, secondName:string, price:string, backgroundUrl:string}[] = data;
 }

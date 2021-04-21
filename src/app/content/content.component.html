@@ -10,59 +10,14 @@
     <p class="content__title">Закуски</p>
     <div class="content__underline"></div>
     <div class="content__range">
-        <div class="dish">
+        <div class="dish" *ngFor="let item of snacksList">
             <div class="dish__description checked-dish ">
-                <p class="dish__title">Сельдь на бородинском хлебе</p>
-                <p class="dish__text">С яйцом и огурцом</p>
-                <p class="dish__price">240 ₽</p>
+                <p class="dish__title">{{item.firstName}}</p>
+                <p class="dish__text">{{item.secondName}}</p>
+                <p class="dish__price">{{item.price}} ₽</p>
             </div>
             <div class="dish__image">
-                <img src="assets/img/Restaurant/photo-5.png" alt="Сельдь на бородинском…" title="Сельдь на бородинском…">
-            </div>
-        </div>
-        <div class="dish">
-            <div class="dish__description">
-                <p class="dish__title">Соленья ассорти</p>
-                <p class="dish__price">320 ₽</p>
-            </div>
-            <div class="dish__image">
-                <img src="assets/img/Restaurant/photo-4.png" alt="Соленья ассорти" title="Соленья ассорти">
-            </div>
-        </div>
-        <div class="dish">
-            <div class="dish__description">
-                <p class="dish__title">Грибы маринованные</p>
-                <p class="dish__price">300 ₽</p>
-            </div>
-            <div class="dish__image">
-                <img src="assets/img/Restaurant/photo-3.png" alt="Грибы маринованные" title="Грибы маринованные">
-            </div>
-        </div>
-        <div class="dish">
-            <div class="dish__description">
-                <p class="dish__title">Сало домашнее с горчицей</p>
-                <p class="dish__price">320 ₽</p>
-            </div>
-            <div class="dish__image">
-                <img src="assets/img/Restaurant/photo-2.png" alt="Сало домашнее с горчицей" title="Сало домашнее с горчицей">
-            </div>
-        </div>
-        <div class="dish">
-            <div class="dish__description">
-                <p class="dish__title">Малосольная семга</p>
-                <p class="dish__price">390 ₽</p>
-            </div>
-            <div class="dish__image">
-                <img src="assets/img/Restaurant/photo-1.png" alt="Малосольная семга" title="Малосольная семга">
-            </div>
-        </div>
-        <div class="dish">
-            <div class="dish__description">
-                <p class="dish__title">Язык говяжий с хреном</p>
-                <p class="dish__price">350 ₽</p>
-            </div>
-            <div class="dish__image">
-                <img src="assets/img/Restaurant/photo-12.png" alt="Язык говяжий с хреном" title="Язык говяжий с хреном">
+                <img src="{{item.backgroundUrl}}" alt="{{item.firstName}}" title="{{item.firstName}}">
             </div>
         </div>
     </div>
