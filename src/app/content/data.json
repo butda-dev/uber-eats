@@ -4,36 +4,133 @@
       "firstName": "Сельдь на бородинском хлебе",
       "secondName": "С яйцом и огурцом",
       "price": "240",
-      "backgroundUrl": "assets/img/Restaurant/photo-5.png"
+      "backgroundUrl": "assets/img/Restaurant/photo-5.png",
+      "category": "Закуски"
     },
     {
       "firstName": "Соленья ассорти",
       "secondName": "",
       "price": "320",
-      "backgroundUrl": "assets/img/Restaurant/photo-4.png"
+      "backgroundUrl": "assets/img/Restaurant/photo-4.png",
+      "category": "Закуски"
     },
     {
       "firstName": "Грибы маринованные",
       "secondName": "",
       "price": "300",
-      "backgroundUrl": "assets/img/Restaurant/photo-3.png"
+      "backgroundUrl": "assets/img/Restaurant/photo-3.png",
+      "category": "Закуски"
     },
     {
       "firstName": "Сало домашнее с горчицей",
       "secondName": "",
       "price": "320",
-      "backgroundUrl": "assets/img/Restaurant/photo-2.png"
+      "backgroundUrl": "assets/img/Restaurant/photo-2.png",
+      "category": "Закуски"
     },
     {
       "firstName": "Малосольная семга",
       "secondName": "",
       "price": "390",
-      "backgroundUrl": "assets/img/Restaurant/photo-1.png"
+      "backgroundUrl": "assets/img/Restaurant/photo-1.png",
+      "category": "Закуски"
     },
     {
       "firstName": "Язык говяжий с хреном",
       "secondName": "",
       "price": "350",
-      "backgroundUrl": "assets/img/Restaurant/photo-12.png"
-    }
+      "backgroundUrl": "assets/img/Restaurant/photo-12.png",
+      "category": "Закуски"
+    },
+    {
+        "firstName": "Салат с куриным филе",
+        "secondName": "С салатными листьями и овощами",
+        "price": "150",
+        "backgroundUrl": "assets/img/Restaurant/salat-1.jpg",
+        "category": "Салаты"
+      },
+      {
+        "firstName": "Салат слоеный с лососем",
+        "secondName": "С творожным сыром, чесночком и хреном",
+        "price": "160",
+        "backgroundUrl": "assets/img/Restaurant/salat-2.jpg",
+        "category": "Салаты"
+      },
+      {
+        "firstName": "Креветки гриль со свежим салатом и овощами",
+        "secondName": "Под горчично-бальзамическим дрессингом",
+        "price": "220",
+        "backgroundUrl": "assets/img/Restaurant/salat-3.jpg",
+        "category": "Салаты"
+      },
+      {
+        "firstName": "Суп с рыбой и морепродуктами",
+        "secondName": "",
+        "price": "300",
+        "backgroundUrl": "assets/img/Restaurant/sup-1.jpg",
+        "category": "Супы"
+      },
+      {
+        "firstName": "Борщ с говядиной",
+        "secondName": "С ломтиком сала на хлебном чипсе и сметаной",
+        "price": "300",
+        "backgroundUrl": "assets/img/Restaurant/sup-2.jpg",
+        "category": "Супы"
+      },
+      {
+        "firstName": "Суп с гедза",
+        "secondName": "С уткой в соевом бульоне с пекинской капустой и яйцом",
+        "price": "220",
+        "backgroundUrl": "assets/img/Restaurant/sup-3.jpg",
+        "category": "Супы"
+      },
+      {
+        "firstName": "Вырезка говядины на гриле",
+        "secondName": "С соусом порто на блинчике с булгуром и грибами",
+        "price": "120",
+        "backgroundUrl": "assets/img/Restaurant/gor-1.jpg",
+        "category": "Горячие блюда"
+      },
+      {
+        "firstName": "Фланк-стейк",
+        "secondName": "С овощами гриль и соусом из черного перца",
+        "price": "160",
+        "backgroundUrl": "assets/img/Restaurant/gor-2.jpg",
+        "category": "Горячие блюда"
+      },
+      {
+        "firstName": "Рубленый бифштекс",
+        "secondName": "С сыром, яйцом пашот, малосольными огурчиками и картофелем с чесночком",
+        "price": "200",
+        "backgroundUrl": "assets/img/Restaurant/gor-3.jpg",
+        "category": "Горячие блюда"
+      },
+      {
+        "firstName": "Ром-баба",
+        "secondName": "Пропитанная ромом с сорбетом из вишни",
+        "price": "80",
+        "backgroundUrl": "assets/img/Restaurant/des-1.jpg",
+        "category": "Десерты"
+      },
+      {
+        "firstName": "Брусничный торт",
+        "secondName": "С нежным кремом из сыра",
+        "price": "150",
+        "backgroundUrl": "assets/img/Restaurant/des-2.jpg",
+        "category": "Десерты"
+      },
+      {
+        "firstName": "Фруктовая ваза",
+        "secondName": "Груши, виноград, апельсины, яблоки, ананас, киви, ягоды",
+        "price": "850",
+        "backgroundUrl": "assets/img/Restaurant/des-3.jpg",
+        "category": "Десерты"
+      },
+      {
+        "firstName": "Рис мексиканский",
+        "secondName": "",
+        "price": "120",
+        "backgroundUrl": "assets/img/Restaurant/garn-12.jpg",
+        "category": "Гарниры"
+      }
   ]

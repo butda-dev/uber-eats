@@ -1,17 +1,12 @@
 <div class="categories">
-    <p class="categories__title active-title">Закуски</p>
-    <p class="categories__title">Салаты</p>
-    <p class="categories__title">Супы</p>
-    <p class="categories__title">Горячие блюда</p>
-    <p class="categories__title">Гарниры</p>
-    <p class="categories__title">Десерты</p>
+    <p class="categories__title" *ngFor="let item of categories; let i = index;" [class.active-title]="selectedCategory === i" (click)="selectCategory(i)">{{item}}</p>
 </div>
 <section class="content">
-    <p class="content__title">Закуски</p>
+    <p class="content__title">{{categories[selectedCategory]}}</p>
     <div class="content__underline"></div>
     <div class="content__range">
-        <div class="dish" *ngFor="let item of snacksList">
-            <div class="dish__description checked-dish ">
+        <div class="dish" *ngFor="let item of selectedList; let i = index;" [class.checked-dish]="selectedDish === i" (click)="selectedDish = i">
+            <div class="dish__description">
                 <p class="dish__title">{{item.firstName}}</p>
                 <p class="dish__text">{{item.secondName}}</p>
                 <p class="dish__price">{{item.price}} ₽</p>

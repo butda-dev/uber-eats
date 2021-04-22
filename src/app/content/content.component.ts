@@ -8,10 +8,22 @@ import data from './data.json';
 })
 export class ContentComponent implements OnInit {
 
-  constructor() { }
+  constructor() {
+    this.selectedList = this.dishList.filter(x => x.category == this.categories[this.selectedCategory]);
+   }
 
   ngOnInit(): void {
+    
   }
 
-  public snacksList:{firstName:string, secondName:string, price:string, backgroundUrl:string}[] = data;
+  public selectedList: any;
+  public selectedDish: number = -1;
+  public selectedCategory: number = 0;
+  public dishList:{firstName:string, secondName:string, price:string, backgroundUrl:string, category:string}[] = data;
+  public categories: string[] = ["Закуски", "Салаты", "Супы", "Горячие блюда", "Гарниры", "Десерты"];
+
+  public selectCategory(i: number) : void {
+    this.selectedCategory = i;
+    this.selectedList = this.dishList.filter(x => x.category == this.categories[i]);
+  }
 }

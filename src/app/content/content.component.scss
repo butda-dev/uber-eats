@@ -3,7 +3,7 @@ $font-family: "Roboto", Arial, sans-serif;
 $screen-xs : 473px;
 $screen-sm : 565px;
 $screen-md : 768px;
-$screen-lg : 1124px;
+$screen-lg : 1086px;
 
 .categories {
   display: none;
@@ -102,6 +102,8 @@ $screen-lg : 1124px;
   margin-top: 16px;
 
   &__description {
+    display: flex;
+    flex-flow: column wrap;
     box-sizing: border-box;
     flex-grow: 1;
     text-align: left;
@@ -117,6 +119,7 @@ $screen-lg : 1124px;
   &__title {
     margin-block-start: 0;
     margin-block-end: 0;
+    width: 205px;
     font-size: 14px;
     color: #1D1D1D;
 
@@ -127,20 +130,21 @@ $screen-lg : 1124px;
   }
 
   &__text {
-    position: absolute;
     margin-top: 9px;
+    width: 200px;
     font-size: 13px;
     color: #626262;
   }
 
   &__price {
-    margin-block-start: 41px;
+    margin-block-start: 80px;
+    position: absolute;
     font-size: 15px;
     font-weight: 550;
     color: #1D1D1D;
 
     @media screen and (min-width: $screen-xs){
-      margin-block-start: 83px;
+      margin-block-start: 90px;
     }
   }
 
@@ -177,11 +181,11 @@ $screen-lg : 1124px;
     margin-right: 0.703vw;
     margin-bottom: 17px;
   }
+  @media screen and (min-width: $screen-lg){
+    flex: 0 1 45%;
+  }
 }
 
 .checked-dish {
-
-  @media screen and (min-width: $screen-xs) {
     background: #f9f9f9;
-  }
 }
