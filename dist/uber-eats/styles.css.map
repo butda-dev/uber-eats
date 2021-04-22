@@ -1,0 +1,1 @@
+{"version":3,"sources":["./dist/styles.scss"],"names":[],"mappings":"AAAA;EACE;AACF;;AAEA;EACI;EACA;AACJ,C","file":"styles.css","sourcesContent":["html {\n  scroll-behavior: smooth;\n}\n\nbody {\n    margin: 0;\n    min-width: 322px;\n  }\n"],"sourceRoot":"webpack:///"}
